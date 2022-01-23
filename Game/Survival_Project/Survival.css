@@ -1,0 +1,515 @@
+
+::-webkit-scrollbar {width: 1px;}
+::-webkit-scrollbar-button:start:decrement, 
+::-webkit-scrollbar-button:end:increment {width: 1px; rgba(0,0,0,.05);}
+::-webkit-scrollbar-track {background: rgba(0,0,0,.05); }
+::-webkit-scrollbar-thumb {background: rgba(0,0,0,.1);  }
+
+body
+{
+	background:url('Img/초원.jpg');
+	background-size:100vw 100vh;
+	
+	font-family:'Goyang', Goyang;
+	overflow: hidden;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+#main
+{
+	background-color:black;
+	
+	width:70vw;
+	height:80vh;
+	
+	left:0; right:0; margin-left:auto; margin-right:auto;
+	top:0; bottom:0; margin-top:auto; margin-bottom:auto;
+	
+	position:absolute;
+	
+	border:3px white solid;
+	
+	z-index:20;
+}
+
+#msgarea
+{
+	width:15vw;
+	height:80vh;
+	
+	border-right:1px white solid;
+	
+	position:absolute;
+	
+	line-height:1em;;
+	word-break:normal;
+	text-overflow:clip;
+	overflow:hidden;
+	font-size:0.85vw;
+	
+	z-index:20;
+}
+
+#msgareacover
+{
+	width:15vw;
+	height:80vh;
+	
+	position:absolute;
+	
+	background: -webkit-linear-gradient(to bottom, rgba(255,255,0,0), rgba(0,0,0,1));
+	background: linear-gradient(to bottom, rgba(255,255,0,0), rgba(0,0,0,1));
+	
+	z-index:20;
+}
+
+#actionarea
+{
+	width:38.8vw;
+	height:77.6vh;
+	
+	position:absolute;
+	
+	margin-left:15vw;
+	
+	padding-left:1vw;
+	padding-top:1vw;
+	
+	z-index:20;
+	
+	color:white;
+	font-size:1.1vw;
+	
+	overflow-x:hidden;
+}
+
+.homeimg
+{
+	z-index:12;
+	
+	width:100%; 
+	height:100%; 
+	margin-top:-12vh; 
+	position:absolute;
+}
+.action{z-index:13;}
+.spticon{z-index:14; cursor:crosshair;}
+.homeevent{cursor:crosshair;}
+
+#statarea
+{
+	width:15vw;
+	height:20vh;
+	
+	border:1px white solid;
+	
+	position:absolute;
+	
+	margin-left:55vw;
+	
+	z-index:20;
+	
+	color:white;
+	font-size:2.5vh;
+	text-align:center;
+}
+
+#bagarea
+{
+	width:15vw;
+	height:55vh;
+	
+	border:1px white solid;
+	
+	position:absolute;
+	
+	margin-left:55vw;
+	margin-top:25vh;
+	
+	font-size:1vw;
+	color:white;
+	text-align:center;
+	
+	z-index:20;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+#storyarea
+{
+	background-color:black;
+	
+	width:70vw;
+	height:80vh;
+	
+	left:0; right:0; margin-left:auto; margin-right:auto;
+	top:0; bottom:0; margin-top:auto; margin-bottom:auto;
+	
+	position:absolute;
+	
+	border:3px white solid;
+	
+	z-index:10;
+}
+
+#chrarea
+{
+	width:70vw;
+	height:55vh;
+	
+	position:absolute;
+	
+	z-index:10;
+	
+	text-align:center;
+}
+
+.storychrimg
+{
+	height:65vh;
+	width:auto;
+	
+	position:relative;
+	
+	margin-top:10vh;
+}
+
+#textarea
+{
+	width:55vw;
+	height:25vh;
+	
+	position:absolute;
+	
+	margin-top:55vh;
+	
+	border:1px solid white;
+	background-color:black;
+	
+	color:white;
+	font-size:1.2vw;
+	line-height:1.3em;
+	word-break:break-all;
+	overflow:hidden;
+	text-align:center;
+	
+	z-index:10;
+}
+
+#facearea
+{
+	width:15vw;
+	height:25vh;
+	
+	margin-left:55vw;
+	margin-top:55vh;
+	
+	position:absolute;
+	
+	border:1px solid white;
+	
+	z-index:10;
+	
+	background:url("Img/faceback.jpg") no-repeat;
+	background-size:15vw 25vh;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+#bagmenu
+{
+	width:8vw;
+	
+	left:0; right:0; margin-left:84.7vw; margin-right:auto;
+	top:0; bottom:0; margin-top:35vh; margin-bottom:auto;
+
+	position:absoulte;
+	
+	color:white;
+	
+	z-index:20;
+}
+
+.bagname
+{
+	width:6vw;
+	height:4vh;
+	
+	border:1px solid white;
+	
+	font-size:1.2vw;
+	font-weight:"bold";
+	text-align:center;
+	line-height:1.8em;
+	color:white;
+	
+	background-color:blue;
+	
+	z-index:20;
+}
+
+.bagbutton, .chrbutton
+{
+	width:6vw;
+	height:4vh;
+	
+	border:1px solid white;
+	
+	font-size:1.15vw;
+	font-weight:"bold";
+	text-align:center;
+	line-height:1.8em;
+	color:white;
+	
+	z-index:20;
+}
+
+.bagbutton:hover, .chrbutton:hover
+{
+	cursor:crosshair;
+	color:blue;
+}
+
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+#battlearea
+{
+	background-color:black;
+	
+	width:70vw;
+	height:80vh;
+	
+	left:0; right:0; margin-left:auto; margin-right:auto;
+	top:0; bottom:0; margin-top:auto; margin-bottom:auto;
+	
+	position:absolute;
+	
+	border:3px white solid;
+	
+	z-index:10;
+}
+
+.atkeft
+{
+	left:0; right:0; margin-left:auto; margin-right:auto;
+	top:0; bottom:0; margin-top:auto; margin-bottom:auto;
+	
+	position:absolute;
+	
+	z-index:10;
+}
+
+#playerarea
+{
+	width:30vw;
+	height:80vh;
+	
+	position:absolute;
+	margin-left:0px;
+	
+	border:1px solid white;
+	
+	z-index:10;
+}
+
+#playerimg
+{
+	width:30vw;
+	height:60vh;
+	
+	position:absolute;
+	margin-left:0px;
+	
+	border:1px solid white;
+	
+	z-index:10;
+}
+
+#playerinfo
+{
+	width:30vw;
+	height:20vh;
+	
+	position:absolute;
+	margin-left:0px;
+	margin-top:60vh;
+	
+	border:1px solid white;
+	
+	z-index:10;
+}
+
+#enemyarea
+{
+	width:30vw;
+	height:60vh;
+	
+	position:absolute;
+	margin-left:40vw;
+	
+	border:1px solid white;
+	
+	z-index:10;
+}
+
+#enemyimg
+{
+	width:30vw;
+	height:60vh;
+	
+	position:absolute;
+	margin-right:0px;
+	
+	border:1px solid white;
+	
+	z-index:10;
+}
+
+#enemyinfo
+{
+	width:30vw;
+	height:20vh;
+	
+	position:absolute;
+	margin-right:0px;
+	margin-top:60vh;
+	
+	border:1px solid white;
+	
+	z-index:10;
+}
+
+#playerinfo, #enemyinfo
+{
+	color:white;
+	font-size:1.1em;
+	text-align:center;
+}
+
+.dmgview
+{
+	color:white;
+	font-size:3.2em;
+	text-align:center;
+	position:absolute;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////// */
+
+body:before
+{
+  content:'';
+  height:100%;
+  display:inline-block;
+  vertical-align:middle;
+}
+
+button
+{
+  background:white;
+  color:red;
+  border:none;
+  position:relative;
+  height:4.5vh;
+  width:4.5vw;
+  font-size:1.2vw;
+  text-align:center;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+  border:1px solid red;
+  margin-right:0.7vw;
+}
+
+button:nth-last-child(1){margin-right:0vw;}
+
+button:hover
+{
+  background:red;
+  color:white;
+}
+
+button:before,button:after
+{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background:white;
+  transition:400ms ease all;
+}
+
+button:after
+{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+
+button:hover:before,button:hover:after
+{
+  width:100%;
+  transition:800ms ease all;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+
+#map
+{	
+	width:70vw;
+	height:80vh;
+	
+	left:0; right:0; margin-left:auto; margin-right:auto;
+	top:0; bottom:0; margin-top:auto; margin-bottom:auto;
+	
+	position:absolute;
+	
+	border:3px white solid;
+	
+	z-index:10;
+}
+
+.mapmouseover:hover{cursor:crosshair;}
+
+.button{width:3.7vw; height:2.5vh; bottom:0; font-size:0.7vw;}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+
+#defarea
+{
+	width:60vw;
+	height:68vh;
+	
+	left:0; right:0; margin-left:auto; margin-right:auto;
+	top:0; bottom:0; margin-top:auto; margin-bottom:auto;
+	
+	position:absolute;
+	
+	border:3px white solid;
+	
+	z-index:10;
+	
+	background:url('Img/defmap.png');
+}
+
+.mondiv
+{
+	width:80px;
+	height:80px;
+	position:absolute;
+	
+	margin-left:1020px;
+	margin-top:260px;
+}

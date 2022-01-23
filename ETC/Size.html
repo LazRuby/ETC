@@ -1,0 +1,54 @@
+<!DOCTYPE html><html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>LazRuby's World</title>
+	<link rel="shortcut icon" href="Img\Icon.ico">
+	<script src="Jquery.js"></script>
+	
+	<style>
+		html
+		{
+			background-color:black;
+			color:white;
+		}
+		
+		#Area
+		{
+			width : 400px;
+			height : 300px;
+			
+			text-align:center;
+			
+			left:0; right:0; margin-left:auto; margin-right:auto; 
+			top:0; bottom:0; margin-top:auto; margin-bottom:auto;
+			
+			position:absolute;
+		}
+	</style>
+</head>
+
+<body >
+
+	<div id="Area">
+		: 죄송합니다. :<br>
+		: 귀하의 브라우저 사이즈가 :<br>
+		: 최소조건에 도달하지 못하였습니다. :<br><br>
+		
+		: 최소 브라우저 크기 :<br>
+		: 가로 = 1100, 세로 650 :<br><br>
+		
+		: 귀하의 브라우저 크기 :<br>
+		<span id="size"></span>
+		
+		<script> 
+			$("#size").html(": 가로 : " + $(window).width() + " / 세로 : " + $(window).height() + " :")
+			
+			window.addEventListener('resize', function()
+					{
+						$("#size").html(": 가로 : " + $(window).width() + " / 세로 : " + $(window).height() + " :")
+						if(($(window).width()>=1100)&&($(window).height()>=650)){location.href="http://www.lazruby.com/Main/Main.php";}}, false);
+		</script>
+	</div>
+	
+</body></html>

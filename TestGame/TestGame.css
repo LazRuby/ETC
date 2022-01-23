@@ -1,0 +1,74 @@
+
+::-webkit-scrollbar {width: 1px;}
+::-webkit-scrollbar-button:start:decrement, 
+::-webkit-scrollbar-button:end:increment {width: 1px;rgba(0,0,0,.05);}
+::-webkit-scrollbar-track {background: rgba(0,0,0,.05); }
+::-webkit-scrollbar-thumb {background: rgba(0,0,0,.1);  }
+
+body
+{
+	background:url('Img/ClassRoom.png');
+	background-size:100vw 100vh;
+	
+	font-family:'Goyang', Goyang;
+	overflow: hidden;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+#musicslot
+{
+    margin-left:1VW;
+	margin-top:1vh;
+}
+
+#chrarea
+{
+	width:100vw;
+	height:100vh;
+	
+	position:absolute;
+	
+	z-index:10;
+	
+	text-align:center;
+}
+
+.storychrimg
+{
+	height:90vh;
+	width:auto;
+	
+	position:relative;
+	
+	margin-top:10vh;
+}
+
+#textarea
+{
+    background:url('Img/ChatBorder.png') no-repeat center;
+    background-size:100% 100%;
+    
+	width:45vw;
+	height:25vh;
+    
+    padding-top:5vh;
+    padding-left:1.5vw;
+    padding-right:1.5vw;
+	
+	position:absolute;
+	
+	color:white;
+	font-size:1.2vw;
+	line-height:1.3em;
+	word-break:break-all;
+	overflow:hidden;
+	text-align:center;
+    
+    left:0; right:0; margin-left:auto; margin-right:auto;
+	top:0; bottom:0; margin-top:70vh; margin-bottom:auto;
+	
+	opacity:0.7;
+	z-index:10;
+}

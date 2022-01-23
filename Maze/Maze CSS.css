@@ -1,0 +1,62 @@
+td
+{
+	width:15px; 
+	height:15px; 
+	border:1px white solid;
+	-webkit-touch-callout: none;
+	user-select: none;
+}
+
+table{border:1px white solid;}
+
+input[type="radio"]{width: 17px; height: 17px; }
+	      
+.palette
+{
+	width:365px;
+	height:468px;
+	border:1px white solid;
+	margin:393px auto;
+	margin-left:1300px;
+	background-color:black;
+	
+	color:white;
+	font-size:1.2em;
+	line-height :1.1em;
+	position:absolute;
+	text-align:center;
+	
+	overflow:auto;
+}
+
+.scale
+{
+	margin:360px auto;
+	margin-left:1300px;
+	border-radius: 15px;
+	background-color:black;
+	color:white;
+	position:absolute;
+	text-align:center;
+}
+	   
+   
+#savecodeslot	   
+{
+	width:1200px;
+	height:30px;
+	margin:900px auto;
+	margin-left:100px;
+	overflow:hidden;
+	border:1px white solid;
+	color:black;
+	position : absolute;
+}
+
+
+#palettea{z-index:10;}
+#paletteb{z-index:0;}
+#palettec{z-index:0;}
+#paletted{z-index:0;}
+#palettee{z-index:0; line-height :1.2em;}
+	 

@@ -1,0 +1,224 @@
+@CHARSET "UTF-8";
+
+::-webkit-scrollbar {width: 1px;}
+::-webkit-scrollbar-button:start:decrement, 
+::-webkit-scrollbar-button:end:increment {width: 1px;rgba(0,0,0,.05);}
+::-webkit-scrollbar-track {background: rgba(0,0,0,.05); }
+::-webkit-scrollbar-thumb {background: rgba(0,0,0,.1);  }
+
+body
+{	
+	background:url('../Img/BackGround2.png') no-repeat;
+	background-color:black;
+	background-size:100vw 100vh;
+	font-family:'Goyang', Goyang;
+	overflow-x: hidden;
+}
+
+header
+{
+	left:0; right:0; margin-left:auto; margin-right:auto;
+	top:0; bottom:0; margin-top:auto; margin-bottom:auto;
+
+	color:white;
+	text-align:center;
+	font-size:4vw;
+	font-family: 'Tangerine', serif;
+	text-shadow: 4px 4px 4px #aaa;
+}
+
+@-webkit-keyframes towhite 
+{
+  0%  {background-color:black;}
+  100% {background-color:white; color:black;}
+}
+
+@-webkit-keyframes toblack 
+{
+  0%  {background-color:white;}
+  100% {background-color:black; color:white;}
+}
+
+@-webkit-keyframes headerimgtowhite 
+{
+  0%  {filter:invert(0%);}
+  100% {filter:invert(100%);}
+}
+
+@-webkit-keyframes headerimgtoblack 
+{
+  0%  {filter:invert(100%);}
+  100% {filter:invert(0%);}
+}
+
+@-webkit-keyframes opacitytozero
+{
+	0%  {opacity:0.7;}
+  100% {opacity:0;}
+}
+
+@-webkit-keyframes opacitytoseven
+{
+	0%  {opacity:0;}
+  100% {opacity:0.7;}
+} 
+
+nav
+{	
+	width:35vw;
+	height:7vh;
+	
+	text-align: center;
+	font-family: 'Tangerine', serif;
+	
+	left:0; right:0; margin-left:auto; margin-right:auto;
+	top:0; bottom:0; margin-top:auto; margin-bottom:auto;
+	
+	background-color: rgba(255, 255, 255, 0);
+	
+	border: 1.5vh solid transparent;
+	-webkit-border-image:url(../Img/Border.png) 50;
+	border-image:url(../Img/Border.png) 50;
+}
+
+footer
+{
+	width:30vw;
+	
+	left:0; right:0; margin-left:auto; margin-right:auto;
+	top:0; bottom:0; margin-top:auto; margin-bottom:auto;
+	
+	font-size:0.6vw;
+	color:white;
+	text-align:center;
+}
+
+article
+{
+	width:40vw;
+	
+	left:0; right:0; margin-left:auto; margin-right:auto;
+	top:0; bottom:0; margin-top:auto; margin-bottom:auto;
+	
+	border: 2vw solid transparent;
+	-webkit-border-image:url(../Img/Article_Border.png) 50;
+	border-image:url(../Img/Article_Border.png) 50;
+	
+	text-align:center;
+	font-size:1.1vw;
+}
+
+nav ul{list-style: none; text-align:center;}
+
+nav li
+{
+	width:6vw;
+	height:5vh;
+	
+	margin-right:2vw;
+	display:inline-block;
+	
+	font-size:2vw;
+	text-align:center;
+	color:white;
+}
+
+nav li:hover
+{
+	background:url('../Img/Mouseover Eft.gif');
+	background-size:100% 100%;
+}
+
+nav li:nth-last-child(1){margin-right:0vw;}
+
+audio{width:100%;}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+#MainBanner:hover, #Navselection ul li:hover, nav li:hover
+{
+	font-weight:bold;
+	color:red;
+	cursor:crosshair;
+}
+
+#MainBanner:hover{background:url('');}
+#Navselection ul li:hover{background : url("../Img/Mouseover Eft.gif") no-repeat right;}
+
+#MainArea
+{
+	left:0; right:0; margin-left:auto; margin-right:auto;
+	top:0; bottom:0; margin-top:15vh; margin-bottom:auto;
+}
+
+#BannerImg
+{
+	width:35vw;
+	height:40vh;
+	margin-left:-1.5vw;
+}
+
+#ChrImg{width:18vw; height:40vh; right:0px; bottom:0px; position:fixed;}
+
+#Msg
+{
+	width:10vw;
+	height:11vh;
+	
+	padding:2.5vh 1.5vw 3vh 1.2vw;
+	right:13vw; bottom:10vh;
+	position:fixed;
+	
+	background:url(../Img/Msg_Black.png);
+	background-size:100% 100%;
+	
+	line-height:2.3vh;
+	word-break:normal;
+	text-overflow:clip;
+	overflow:hidden;
+	text-align:center;
+	font-size:1vw;
+	color:black;
+}
+
+#Navselection
+{
+	width:15vw;
+	height:27vh;
+	
+	right:0vw; bottom:40vh;
+	position:fixed;
+	
+	line-height:3vh;;
+	font-size:1.2vw;
+	color:black;
+	
+	border:4vh solid transparent;
+	-webkit-border-image:url(../Img/Nav_Border_Black.png) 50;
+	border-image:url(../Img/Nav_Border_Black.png) 50;
+}
+
+#Navselection ul li{background-size:3vw 3vh;}
+#Navselection ul li:hover{margin-top:0.6vh; margin-bottom:0.6vh;}
+
+#Music
+{
+	left:0; right:0; margin-left:auto; margin-right:auto; 
+	top:0; bottom:0; margin-top:-1.7vh; margin-bottom:auto;
+	
+	width:13vw;
+}
+
+#Whitebackground
+{
+	left:0; right:0; margin-left:auto; margin-right:auto; 
+	top:0; bottom:0; margin-top:auto; margin-bottom:auto;
+	
+	opacity:0;
+	
+	position:fixed;	
+	
+	z-index:-5;
+}
