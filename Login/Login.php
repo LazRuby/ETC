@@ -46,7 +46,7 @@
 	if(strlen($_POST["inputid"])>=1)
 	   {
 
-             $cnt = mysql_connect("localhost", "lazruby", "!wn22131967")
+             $cnt = mysql_connect("GIT 업로드용 삭제"); 
              or die ("Fail Login.");
              mysql_select_db("lazruby.savedata", $cnt);
 

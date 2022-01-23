@@ -71,7 +71,7 @@
 	
 	<?php if(strlen($_POST["inputid"])>=3){
 	    
-        $cnt = mysql_connect("localhost", "lazruby", "!wn22131967")
+        $cnt = mysql_connect("GIT 업로드용 삭제")
             or die ("서버 접속 실패.");
         mysql_select_db("lazruby", $cnt);
         
